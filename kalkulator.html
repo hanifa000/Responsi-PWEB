@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kalkulator</title>
+	<link rel="stylesheet" href="kalkulator.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body background="Background.jfif">
+	<div class="tengah">
+		<h2>Kalkulator</h2>
+		<form name="form">
+			<input class="textarea" name="text" type="text">
+		</form>
+		<table>
+			<tr>
+				<td><input class="button operasi" type="button" value="C" onclick="clean()"></td>
+				<td><input class="button operasi" type="button" value="CE" onclick="back()"></td>
+				<td><input class="button operasi" type="button" value="+/-" onclick="menfi('-')"></td>
+				<td><input class="button operasi" type="button" value="÷" onclick="insert('/')"></td>
+			</tr>
+			<tr>
+				<td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+				<td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+				<td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+			    <td><input class="button operasi" type="button" value="x" onclick="insert('*')"></td>
+			</tr>
+			<tr>
+				<td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+				<td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+				<td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+				<td><input class="button operasi" type="button" value="-" onclick="insert('-')"></td>
+			</tr>
+			<tr>
+				<td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+				<td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+				<td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+				<td><input class="button operasi" type="button" value="+" onclick="insert('+')"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input style="width: 140px;" class="button" type="button" value="0" onclick="insert(0)"></td>
+				<td><input class="button" type="button" value="," onclick="insert(',')"></td>
+				<td><input class="button operasi" type="button" value="=" onclick="equal('=')"></td>
+			</tr>
+		</table>
+	</div>
+
+    <div align="center">
+    <a href="index.html" class="style">&nbsp;&nbsp;>>home<<</a>
+	<a href="form.html" class="style">>>isi biodata<<</a>
+    <a href="random.html" class="style">&nbsp;&nbsp;>>paaww things<<</a>
+    <a href="date.php" class="style">&nbsp;&nbsp;>>today's date<<</a>
+    </div>
+    <script src="kalkulator.js"></script>
+    
+
+
+
+</body>
+</html>
